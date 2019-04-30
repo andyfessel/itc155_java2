@@ -1,0 +1,58 @@
+
+	
+// Java program to remove duplicates from ArrayList 
+	  
+import java.util.*; 
+	  
+public class Chap11Ex6B { 
+	  
+	// Function to remove duplicates from an ArrayList 
+    public static <T> ArrayList<T> removeDuplicates(ArrayList<T> list) 
+	    { 
+        // Create a new ArrayList 
+	    ArrayList<T> newList = new ArrayList<T>(); 
+	  
+	    // Traverse through the first list 
+	        for (T element : list) { 
+	        	// If this element is not present in newList 
+	            // then add it 
+	            if (!newList.contains(element)) { 
+	            	newList.add(element); 
+	            } 
+	        } 
+	  
+	        // return the new list 
+	        return newList; 
+	    } 
+	  
+	    // Driver code 
+	    public static void main(String args[]) 
+	    { 
+	        // Get the ArrayList with duplicate values 
+	    	ArrayList<Integer> 
+	        list = new ArrayList<>( 
+	            Arrays 
+	                .asList(3, 7, 3, -1, 2, 3, 7, 2, 15, 15));
+	    //Print the Arraylist 
+	    System.out.println("ArrayList with duplicates: "
+	                       + list); 
+
+	    // Remove duplicates 
+	    ArrayList<Integer> 
+	        newList = removeDuplicates(list);
+	  
+	        // Print the ArrayList with duplicates removed 
+	        System.out.println("ArrayList with duplicates removed: "
+	                           + newList);
+	        
+	        int lstsiz = newList.size();
+	        
+	        System.out.println("The number of unique elements/numbers is: " + lstsiz);
+	  
+	        } 
+	    
+	    	
+	  
+	    
+	    
+}
