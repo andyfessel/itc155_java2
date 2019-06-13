@@ -1,0 +1,3 @@
+O(N ^2 )
+
+we have one nested loop and additional singel for loop. the maximum driver for procesing time is the nested for loop which is O(N ^2 )
